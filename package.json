@@ -1,0 +1,24 @@
+{
+  "name": "xiv-react-bgimage",
+  "version": "0.1.0",
+  "description": "A component to display image using CSS background property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mr-14/xiv-react-bgimage.git"
+  },
+  "keywords": [
+    "React",
+    "background",
+    "image"
+  ],
+  "author": "Mr. 14",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mr-14/xiv-react-bgimage/issues"
+  },
+  "homepage": "https://github.com/mr-14/xiv-react-bgimage#readme"
+}
