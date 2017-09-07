@@ -1,0 +1,182 @@
+/**! 1. Background Image **/
+/**! 2. Image Blocks **/
+/**************************/
+/**! 1. Background Image **/
+.bg-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.bg-image-wrapper .container {
+  z-index: 2;
+}
+.bg-image-wrapper .container:not(.pos-absolute) {
+  position: relative;
+}
+.bg-image-wrapper.image-dark h1,
+.bg-image-wrapper.image-dark h2,
+.bg-image-wrapper.image-dark h3,
+.bg-image-wrapper.image-dark h4,
+.bg-image-wrapper.image-dark h5,
+.bg-image-wrapper.image-dark h6,
+.bg-image-wrapper.image-dark p,
+.bg-image-wrapper.image-dark ul {
+  color: #fff;
+}
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover !important;
+  z-index: 0;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+}
+.bg-image-overlay.overlay-full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.bg-image-wrapper.image-dark .bg-image-overlay.overlay-bottom {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #232323));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #232323 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+.bg-image-overlay.overlay-bottom {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #fff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #fff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #fff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #fff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #fff 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #fff 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+.bg-image-wrapper.image-dark .bg-image-overlay.overlay-top {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: -moz-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, #232323), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.bg-image-overlay.overlay-top {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: -moz-linear-gradient(bottom, #fff 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, #fff), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(bottom, #fff 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(bottom, #fff 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(bottom, #fff 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fff 0%, rgba(0, 0, 0, 0) 100%);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/**! 2. Image Blocks **/
+.imageblock {
+  position: relative;
+  padding: 0;
+}
+.imageblock > .container,
+.imageblock > div[class*='col-']:not(.imageblock__content) {
+  padding-top: 6.5em;
+  padding-bottom: 8.125em;
+  float: none;
+  overflow: hidden;
+}
+.imageblock.imageblock--lg > .container,
+.imageblock.imageblock--lg > div[class*='col-']:not(.imageblock__content) {
+  padding-top: 10.15625em;
+  padding-bottom: 10.15625em;
+  float: none;
+  overflow: hidden;
+}
+.imageblock .imageblock__content {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  padding: 0;
+}
+.imageblock .imageblock__content .slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.imageblock .imageblock__content .slider .slides > li {
+  padding: 0;
+  min-height: 100%;
+  position: absolute !important;
+}
+.imageblock.allow-overflow .imageblock__content {
+  overflow: visible;
+}
+@media all and (max-width: 767px) {
+  .imageblock .imageblock__content {
+    position: relative;
+    min-height: 16.25em;
+  }
+  .imageblock > .container,
+  .imageblock > div[class*='col-']:not(.imageblock__content) {
+    padding-top: 4.875em;
+    padding-bottom: 4.875em;
+    float: none;
+    overflow: hidden;
+  }
+  .imageblock.imageblock--lg > .container,
+  .imageblock.imageblock--lg > div[class*='col-']:not(.imageblock__content) {
+    padding-top: 4.875em;
+    padding-bottom: 4.875em;
+    float: none;
+    overflow: hidden;
+  }
+}
